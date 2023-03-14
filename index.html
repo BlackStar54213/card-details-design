@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+ 
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+<div class="every">
+  <div class="color">
+    <img src="images/bg-main-desktop.png" alt="bg" class="desktopbg">
+    <img src="images/bg-main-mobile.png" alt="bg" class="mobilebg">
+  </div>
+  <div class="form">
+    <form action="">
+      <label for="" class="label" >Cardholder Name</label>
+      <input type="text" class="input" placeholder="e.g. Jane Appleseed" id="cardholdername" required>
+
+      <label for="" class="label" >Card Number</label>
+      <input type="text" class="input" placeholder="e.g. 1234 5678 9123 0000" id="cardholdernumber" required >
+     
+      <label for="" class="label" id="exp-date">Exp. Date (MM/YY)</label>
+      <input type="number" class="dater" placeholder="MM" id="month" required>
+      <input type="number" placeholder="YY" name="year" class="dater" id="year" required>
+      <div class="bottom">
+      <label for="" class="label" id="last-label">CVC</label>
+      <input type="number" class="dater" placeholder="e.g. 123"  id="exp" required>
+      </div>
+      <button type="button" onclick="updateDetails(); myFunctional();">Confirm</button>
+    </form>
+    </main>
+  </div>
+</div>
+<div class="floaters">
+<img src="images/bg-card-back.png" alt="" class="card-back">
+<img src="images/bg-card-front.png" alt="" class="card-front">
+
+<img src="images/card-logo.svg" alt="" class="logo">
+  <h1 class="cardtext1" id="cardnumber">0000 0000 0000 0000</h1>
+  <h2 class="cardname" id="cardname">Jane Appleseed</h2>
+  <h2 class="carddate" id="carddate">00/00</h2>
+  <h2 class="backcardtext" id="cvc">000</h2>
+  </div>
+  <div class="complete" id="complete">
+    <img src="images/icon-complete.svg" alt="process complete">
+    <h2 class="thanks">Thank you!</h2>
+    <p class="add">We've added your card details</p>
+    <button onclick="myFunction()" style="width:35%;">Continue</button>
+    
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">DESMOND IZU</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
